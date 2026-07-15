@@ -26,17 +26,23 @@ public class Main {
 //        product2.display();
 //        product3.display();
 
-        Dog d = new Dog("Bruno", "Labrador");
-        Cat c = new Cat("Whiskers", true);
+//        Dog d = new Dog("Bruno", "Labrador");
+//        Cat c = new Cat("Whiskers", true);
+//
+//        d.makeSound();   // Inherited from Animal → "Bruno says: Woof"
+//        d.sleep();       // Inherited from Animal → "Bruno is sleeping..."
+//        d.fetch();       // Dog's own method
+//
+//        c.makeSound();   // Inherited from Animal → "Whiskers says: Meow"
+//        c.purr();        // Cat's own method
+//
+//        System.out.println(d.getBreed());  // Labrador
+//        System.out.println(c.isIndoor()); // true
 
-        d.makeSound();   // Inherited from Animal → "Bruno says: Woof"
-        d.sleep();       // Inherited from Animal → "Bruno is sleeping..."
-        d.fetch();       // Dog's own method
-
-        c.makeSound();   // Inherited from Animal → "Whiskers says: Meow"
-        c.purr();        // Cat's own method
-
-        System.out.println(d.getBreed());  // Labrador
-        System.out.println(c.isIndoor()); // true
+           Calculator calc = new Calculator();
+            System.out.println("==== METHOD OVERLOADING ====");
+            System.out.println(calc.add(5, 3));           // add(int, int)    → 8
+            System.out.println(calc.add(5, 3, 2));        // add(int,int,int) → 10
+            System.out.println(calc.add(5.5, 3.3));
     }
 }
